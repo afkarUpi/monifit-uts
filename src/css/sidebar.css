@@ -84,14 +84,6 @@ main .side-nav nav ul li:first-child a {
   font-size: 20pt;
 }
 
-main .side-nav nav ul li:nth-child(2) a {
-  color: #FF6600;
-}
-
-main .side-nav nav ul li:nth-child(2) a i {
-  color: #FF6600;
-}
-
 main .side-nav nav ul li a {
   display: flex;
   align-items: center;

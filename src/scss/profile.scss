@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -44,7 +45,7 @@ blockquote, q {
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: "";
+  content: '';
   content: none;
 }
 
@@ -53,8 +54,6 @@ table {
   border-spacing: 0;
 }
 
-li span#profile, li a i#profile {
+li span#profile, li a i#profile{
   color: #FF6600 !important;
 }
-
-/*# sourceMappingURL=profile.css.map */
