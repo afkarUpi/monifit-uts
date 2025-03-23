@@ -57,8 +57,3 @@ table {
 /* 
   Style
 */
-
-main {
-  display: grid;
-  grid-template-columns: max-content auto;
-}
