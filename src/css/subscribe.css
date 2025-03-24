@@ -61,6 +61,8 @@ li span#account, li a i#account {
   display: flex;
   padding: 100px 150px;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 25px;
   margin-left: 150px;
 }
@@ -72,7 +74,11 @@ li span#account, li a i#account {
   border-bottom: 3px solid #FF6600;
   transition: 0.2s;
 }
-.main-content .container .button {
+.main-content .container .title {
+  font-weight: 800;
+  font-size: 24px;
+}
+.main-content .button {
   background-color: #FF6600;
   width: 100%;
   color: white;
@@ -82,15 +88,11 @@ li span#account, li a i#account {
   cursor: pointer;
   transition: 0.2s;
 }
-.main-content .container .button:hover {
+.main-content .button:hover {
   background-color: #e65c00;
 }
-.main-content .container .button i {
+.main-content .button i {
   font-size: 25px;
-}
-.main-content .container .title {
-  font-weight: 800;
-  font-size: 24px;
 }
 .main-content .image-card {
   display: flex;
@@ -116,80 +118,66 @@ li span#account, li a i#account {
   max-width: 100px;
   border-radius: 10px;
 }
-.main-content .setting-items {
+.main-content h1 {
+  font-size: 36px;
+  font-weight: 800;
+}
+.main-content .plans {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+.main-content .plans .plan-card {
+  align-items: center;
+  gap: 10px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  width: 30%;
+  border-top: 2px solid #FF6600;
+  padding: 10px 0;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.221);
+  border-radius: 25px;
 }
-.main-content .setting-items a {
-  color: black;
-  text-decoration: none;
+.main-content .plans .plan-card .title {
+  font-size: 16px;
 }
-.main-content .setting-items a .icon-button {
-  display: flex;
-  background-color: rgba(0, 0, 0, 0.032);
-  padding: 5px;
-  border-radius: 36px;
-  align-items: center;
-  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.059);
-  transition: 0.2s;
-  cursor: pointer;
-}
-.main-content .setting-items a .icon-button:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-.main-content .setting-items a .icon-button i {
-  text-align: center;
+.main-content .plans .plan-card .pricing {
   font-size: 36px;
-  width: 8%;
 }
-.main-content .setting-items a .icon-button .button-text {
-  font-weight: 600;
-  width: 95%;
-}
-.main-content .setting-items a .icon-button#logout {
-  margin-top: 20px;
-}
-.main-content .setting-items a .icon-button i#logout, .main-content .setting-items a .icon-button span#logout {
-  color: red;
-}
-.main-content .profile {
+.main-content .plans .plan-card .benefit-bar {
+  margin-left: -10px;
   display: flex;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.279);
+  padding: 10px;
+  width: 100%;
   gap: 25px;
 }
-.main-content .profile .details {
+.main-content .plans .plan-card .benefit-bar i {
+  color: #FF6600;
+}
+.main-content .plans .plan-card .benefit-bar .benefit {
+  display: flex;
+}
+.main-content .plans .plan-card .button {
+  background-color: #FF6600;
   width: 80%;
-  display: flex;
-  flex-direction: column;
+  color: white;
+  padding: 5px;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.221);
+  align-items: center;
   justify-content: center;
-}
-.main-content .profile .details .name {
-  font-weight: 800;
-  font-size: 32px;
-}
-.main-content .profile .details .email {
-  color: grey;
-}
-.main-content .profile img {
-  border-radius: 25px;
-  object-fit: cover;
-  aspect-ratio: 1/1;
-  max-width: 100px;
-}
-.main-content .profile .arrow {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
   cursor: pointer;
   transition: 0.2s;
-  border-radius: 10px;
 }
-.main-content .profile .arrow:hover {
-  background-color: rgba(0, 0, 0, 0.201);
+.main-content .plans .plan-card .button:hover {
+  background-color: #e65c00;
 }
-.main-content .profile .arrow .uil-angle-right-b {
-  font-size: 56px;
+.main-content .plans .plan-card .button i {
+  font-size: 25px;
 }
 
-/*# sourceMappingURL=account.css.map */
+/*# sourceMappingURL=subscribe.css.map */
