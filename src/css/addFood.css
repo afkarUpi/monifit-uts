@@ -127,3 +127,7 @@ div.add-food-form button:hover {
 div.add-food-form button:active {
   background-color: #FF4400;
 }
+
+li span#add-foods, li a i#add-foods{
+  color: #FF6600 !important;
+}
