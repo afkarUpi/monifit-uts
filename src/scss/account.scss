@@ -1,0 +1,200 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+$primary: #FF6600;
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+li span#account, li a i#account{
+  color: $primary !important;
+}
+
+.main-content{
+    display: flex;
+    padding: 100px 150px;
+    flex-direction: column;
+    gap: 25px;
+    margin-left: 150px;
+    .container{
+        padding: 10px;
+        gap: 10px;
+        border-radius: 10px;
+        box-shadow: 0 4px 3px rgba(0, 0, 0, 0.221);
+        border-bottom: 3px solid $primary;
+        transition: .2s;
+        .button{
+            background-color: $primary;
+            width: 100%;
+            color: white;
+            padding: 5px;
+            box-shadow: 0 4px 3px rgba(0, 0, 0, 0.221);
+            border-radius: 10px;
+            cursor: pointer;
+            transition: .2s;
+            &:hover{
+                background-color: darken($primary, 5%);
+            }
+            i{
+                font-size: 25px;
+            }
+        }
+        .title{
+          font-weight: 800;
+          font-size: 24px;
+        }
+    }
+
+    .image-card{
+      display: flex;
+      border-radius: 10px;
+      gap: 10px;
+      align-items: center;
+      overflow: hidden;
+      border-bottom: 1px solid grey;
+      transition: .2s;
+      cursor: pointer;
+      &:hover{
+        background-color: rgba(0, 0, 0, 0.032);
+        box-shadow: 0 4px 3px rgba(0, 0, 0, 0.221);
+      }
+      .title{
+        margin-bottom: 10px;
+      }
+      img{
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        max-height: 100px;
+        max-width: 100px;
+        border-radius: 10px;
+      }
+    }
+
+    .setting-items{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .icon-button{
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.032);
+        padding: 5px;
+        border-radius: 36px;
+        align-items: center;
+        box-shadow: 0 4px 3px rgba(0, 0, 0, 0.059);
+        transition: .2s;
+        cursor: pointer;
+        &:hover{
+          background-color: rgba(0, 0, 0, 0.1);
+        }
+        i{
+          text-align: center;
+          font-size: 36px;
+          width: 8%;
+        }
+        .button-text{
+          font-weight: 600;
+          width: 95%;
+        }
+        
+        &#logout{
+          margin-top: 20px;
+        }
+
+        i#logout, span#logout{
+          color: red;
+        }
+
+      }
+      
+    }
+    
+
+    .profile{
+      display: flex;
+      gap: 25px;
+      .details{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .name{
+          font-weight: 800;
+          font-size: 32px;
+        }
+        .email{
+          color: grey;
+        }
+      }
+      img{
+        border-radius: 25px;
+        object-fit: cover;
+        aspect-ratio: 1/1;
+        max-width: 100px;
+      }
+      .arrow{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.05);
+        cursor: pointer;
+        transition: .2s;
+        border-radius: 10px;
+        &:hover{
+          background-color: rgba(0, 0, 0, 0.201);
+        }
+        .uil-angle-right-b{
+            font-size: 56px;
+          }
+      }
+    }
+}

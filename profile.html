@@ -23,9 +23,103 @@
     <div id="the-monifit-sidebar"></div>
     <script src="./src/js/script.js"></script>
     <div class="main-content">
-      <div class="profile-picture-card">
-        <img src="https://placehold.co/50x50" alt="profile picture">
+      <div class="profile-card container">
+        <div class="profile-picture">
+          <img src="https://upload.wikimedia.org/wikipedia/en/a/a3/Lordvoldemort.jpg" id="profile-picture" alt="profile picture">
+        </div>
+        <div class="personal-details">
+          <h2 class="name">Lord Voldemort</h2>
+          <h3 class="account-status fade">Monifit Free Plan</h3>
+        </div>
+        <div class="edit-icon">
+          <i class="uil uil-edit"></i>          
+        </div>
       </div>
+      <div class="user-details">
+        <div class="container" id="user-weight">
+          <div class="big-text-wrapper">
+            <span class="weight-number big-text">70</span>
+            <span class="metric">kg</span>
+          </div>
+          <h3 class="description">Weight</h3>
+          <div class="change-button button"> <i class="uil uil-sync"></i></div>
+        </div>
+        <div class="container" id="user-bmi">
+          <div class="big-text-wrapper">
+            <span class="bmi-number big-text">21.6</span>
+            <span class="metric">kg/m²</span>
+          </div>
+          <h3 class="description">BMI</h3>        
+          <div class="change-button button"> <i class="uil uil-question-circle"></i></div>
+        </div>
+        <div class="container" id="user-height">
+          <div class="big-text-wrapper">
+            <span class="height-number big-text">180</span>
+            <span class="metric">cm</span>
+          </div>
+          <h3 class="description">Height</h3>
+          <div class="change-button button"> <i class="uil uil-sync"></i></div>
+        </div>
+      </div>
+      <div class="activity">
+        <div class="container">
+          <div class="title"><span>Calories Consumed</span></div>
+          <div class="graph">
+            <iframe title="" aria-label="Multiple Lines" id="datawrapper-chart-JFAa6" src="https://datawrapper.dwcdn.net/JFAa6/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="293" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}}))}();
+            </script>
+          </div>
+          <div class="add-food"></div>
+        </div>
+        <div class="container">
+          <div class="title"><span>Weight</span></div>
+          <div class="graph">
+            <iframe title="Weight" aria-label="Interactive line chart" id="datawrapper-chart-uEOty" src="https://datawrapper.dwcdn.net/uEOty/4/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="243" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}}))}();
+            </script>
+          </div>
+    
+        </div>
+      </div>
+      
+      <div class="friends container">
+        <div class="title">
+          <h1>Friends</h1>
+          <a>Add Friend</a>
+        </div>
+        <div class="friend-wrapper">
+          <div class="friend-card">
+            <div class="profile-picture"><img src="https://upload.wikimedia.org/wikipedia/en/7/77/EricCartman.png" alt=""></div>
+            <div class="name">Eric Cartman</div>
+            <div class="arrow"><i class="uil uil-arrow-right"></i></div>
+          </div>
+          <div class="friend-card">
+            <div class="profile-picture"><img src="https://cdn.britannica.com/58/222658-050-6D713DFB/American-singer-songwriter-dancer-Michael-Jackson-1979.jpg" alt="profile picture"></div>
+            <div class="name">Michael Jackson</div>
+            <div class="arrow"><i class="uil uil-arrow-right"></i></div>
+          </div>
+          <div class="friend-card">
+            <div class="profile-picture"><img src="https://upload.wikimedia.org/wikipedia/en/0/02/Homer_Simpson_2006.png" alt="profile picture"></div>
+            <div class="name">Homer Simpson</div>
+            <div class="arrow"><i class="uil uil-arrow-right"></i></div>
+          </div>
+          <div class="friend-card">
+            <div class="profile-picture"><img src="https://globalnews.ca/wp-content/uploads/2019/04/gettyimages-631597174.jpg?quality=85&strip=all&w=1200" alt="profile picture"></div>
+            <div class="name">Eric Andre</div>
+            <div class="arrow"><i class="uil uil-arrow-right"></i></div>
+          </div>
+          <div class="friend-card">
+            <div class="profile-picture"><img src="https://upload.wikimedia.org/wikipedia/en/b/bb/The_shining_heres_johnny.jpg" alt="profile picture"></div>
+            <div class="name">Jack Torrance</div>
+            <div class="arrow"><i class="uil uil-arrow-right"></i></div>
+          </div>    
+          <div class="friend-card">
+            <div class="profile-picture"><img src="https://upload.wikimedia.org/wikipedia/en/3/3f/Pok%C3%A9mon_Snorlax_art.png" alt="profile picture"></div>
+            <div class="name">Snorlax</div>
+            <div class="arrow"><i class="uil uil-arrow-right"></i></div>
+          </div>          
+        </div>
+      </div>
+      <script src="./src/js/profile.js"></script>
+      
     </div>
   </main>
 </body>

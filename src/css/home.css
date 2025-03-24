@@ -1,0 +1,188 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+li span#home, li a i#home {
+  color: #FF6600 !important;
+}
+
+.main-content {
+  display: flex;
+  padding: 100px 150px;
+  flex-direction: column;
+  gap: 25px;
+  margin-left: 150px;
+}
+.main-content .container {
+  padding: 10px;
+  gap: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.221);
+  border-bottom: 3px solid #FF6600;
+  transition: 0.2s;
+}
+.main-content .container .button {
+  background-color: #FF6600;
+  width: 100%;
+  color: white;
+  padding: 5px;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.221);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.main-content .container .button:hover {
+  background-color: #e65c00;
+}
+.main-content .container .button i {
+  font-size: 25px;
+}
+.main-content .container .title {
+  font-weight: 800;
+  font-size: 24px;
+}
+.main-content .image-card {
+  display: flex;
+  border-radius: 10px;
+  gap: 10px;
+  align-items: center;
+  overflow: hidden;
+  border-bottom: 1px solid grey;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.main-content .image-card:hover {
+  background-color: rgba(0, 0, 0, 0.032);
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.221);
+}
+.main-content .image-card .title {
+  margin-bottom: 10px;
+}
+.main-content .image-card img {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  max-height: 100px;
+  max-width: 100px;
+  border-radius: 10px;
+}
+.main-content .greeting.container {
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.main-content .greeting.container span {
+  font-weight: 800;
+  font-size: 2rem;
+}
+.main-content .greeting.container img {
+  margin-bottom: -50px;
+  margin-right: -80px;
+}
+.main-content .daily {
+  display: flex;
+  gap: 25px;
+}
+.main-content .daily .container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-content .daily .container .progress-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 9px solid;
+  border-color: #dbdcef;
+  border-right-color: #FF6600;
+}
+.main-content .daily .nutrients {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.main-content .daily .nutrients .container {
+  width: 96.5%;
+}
+.main-content .daily .nutrients .container .title {
+  font-size: 20px;
+}
+.main-content .daily .nutrients .progress {
+  width: 80%;
+  border: 1px solid #FF6600;
+  border-radius: 25px;
+}
+.main-content .daily .nutrients .progress .total {
+  height: 10px;
+  background-color: #FF6600;
+  border-radius: 25px;
+}
+.main-content .daily .nutrients .progress .total#carbs {
+  width: 20%;
+}
+.main-content .daily .nutrients .progress .total#protein {
+  width: 40%;
+}
+.main-content .daily .nutrients .progress .total#fat {
+  width: 10%;
+}
+.main-content .recent-foods {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/*# sourceMappingURL=home.css.map */

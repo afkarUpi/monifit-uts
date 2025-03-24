@@ -57,4 +57,170 @@ li span#profile, li a i#profile {
   color: #FF6600 !important;
 }
 
+.main-content {
+  display: flex;
+  padding: 100px 150px;
+  flex-direction: column;
+  gap: 25px;
+  margin-left: 150px;
+}
+.main-content .container {
+  padding: 10px;
+  gap: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.221);
+  border-bottom: 3px solid #FF6600;
+  transition: 0.2s;
+}
+.main-content .container .button {
+  background-color: #FF6600;
+  width: 100%;
+  color: white;
+  padding: 5px;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.221);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.main-content .container .button:hover {
+  background-color: #e65c00;
+}
+.main-content .container .button i {
+  font-size: 25px;
+}
+.main-content .user-details {
+  display: flex;
+  gap: 25px;
+}
+.main-content .user-details .container {
+  width: 33%;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.main-content .user-details .container:hover {
+  background-color: rgba(0, 0, 0, 0.062);
+}
+.main-content .user-details .container .big-text {
+  font-weight: 800;
+  font-size: 50px;
+}
+.main-content .profile-card {
+  display: flex;
+  max-height: 50px;
+}
+.main-content .profile-card img#profile-picture {
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+.main-content .profile-card .personal-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+}
+.main-content .profile-card .personal-details h2.name {
+  font-weight: 400px;
+  font-size: 20px;
+  margin-bottom: 3px;
+  font-weight: 800;
+}
+.main-content .profile-card .personal-details h3.fade {
+  color: rgba(0, 0, 0, 0.404);
+}
+.main-content .profile-card .edit-icon {
+  font-size: 25px;
+  align-self: center;
+  justify-self: flex-end;
+  transition: 0.2s;
+}
+.main-content .profile-card .edit-icon:hover {
+  color: #FF6600;
+}
+.main-content .activity {
+  display: flex;
+  justify-content: space-between;
+}
+.main-content .activity .container {
+  width: auto;
+  min-width: 45%;
+  text-align: center;
+  justify-content: center;
+}
+.main-content .friends {
+  padding: 40px 30px;
+}
+.main-content .friends .title {
+  display: flex;
+  justify-content: space-between;
+}
+.main-content .friends .title a {
+  color: #FF6600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.main-content .friends .title a:hover {
+  color: #cc5200;
+}
+.main-content .friends h1 {
+  font-weight: 800;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.main-content .friends .friend-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 7px;
+  background-color: rgba(0, 0, 0, 0.025);
+  border-radius: 10px;
+  overflow: auto;
+  height: 80%;
+}
+.main-content .friends .friend-card {
+  display: flex;
+  padding: 7px;
+  align-items: center;
+  gap: 25px;
+  justify-content: space-between;
+  border-radius: 50px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.main-content .friends .friend-card:hover {
+  background-color: rgba(0, 0, 0, 0.057);
+}
+.main-content .friends .friend-card .profile-picture {
+  background-color: rgba(18, 18, 18, 0.221);
+  border-radius: 25px;
+}
+.main-content .friends .friend-card .profile-picture img {
+  border-radius: 25px;
+  max-width: 50px;
+  max-height: 50px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: top;
+}
+.main-content .friends .friend-card .name {
+  font-weight: 400;
+  font-size: 20px;
+  width: 90%;
+}
+.main-content .friends .friend-card .arrow {
+  display: flex;
+  align-items: center;
+}
+.main-content .friends .friend-card .arrow i {
+  transition: 0.2s;
+  font-size: 24px;
+}
+.main-content .friends .friend-card .arrow i:hover {
+  color: #FF6600;
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=profile.css.map */

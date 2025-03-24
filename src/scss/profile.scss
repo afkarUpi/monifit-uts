@@ -3,6 +3,8 @@
    License: none (public domain)
 */
 
+$primary: #FF6600;
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -55,5 +57,175 @@ table {
 }
 
 li span#profile, li a i#profile{
-  color: #FF6600 !important;
+  color: $primary !important;
 }
+
+.main-content{
+    display: flex;
+    padding: 100px 150px;
+    flex-direction: column;
+    gap: 25px;
+    margin-left: 150px;
+    .container{
+        padding: 10px;
+        gap: 10px;
+        border-radius: 10px;
+        box-shadow: 0 4px 3px rgba(0, 0, 0, 0.221);
+        border-bottom: 3px solid $primary;
+        transition: .2s;
+        .button{
+            background-color: $primary;
+            width: 100%;
+            color: white;
+            padding: 5px;
+            box-shadow: 0 4px 3px rgba(0, 0, 0, 0.221);
+            border-radius: 10px;
+            cursor: pointer;
+            transition: .2s;
+            &:hover{
+                background-color: darken($primary, 5%);
+            }
+            i{
+                font-size: 25px;
+            }
+        }
+
+    }
+    .user-details{
+        display: flex;
+        gap: 25px;
+        .container{
+            width: 33%;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            &:hover{
+                background-color: rgba(0, 0, 0, 0.062);
+            }
+            .big-text{
+                font-weight: 800;
+                font-size: 50px;
+            }
+        }
+    }
+    .profile-card{
+        display: flex;
+        max-height: 50px;
+        img#profile-picture{
+            border-radius: 25px;
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+        }
+        .personal-details{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 90%;
+            h2.name{
+                font-weight: 400px;
+                font-size: 20px;
+                margin-bottom: 3px;
+                font-weight: 800;
+            }
+            h3.fade{
+                color:rgba(0, 0, 0, 0.404);
+            }
+        }
+        .edit-icon{
+            font-size: 25px;
+            align-self: center;
+            justify-self: flex-end;
+            transition: .2s;
+            &:hover{
+                color: $primary;
+            }
+        }
+    }
+    .activity{
+        display: flex;
+        justify-content: space-between;
+        .container{
+            width: auto;
+            min-width: 45%;
+            text-align: center;
+            justify-content: center;
+        }
+    }
+    .friends{
+        padding: 40px 30px;
+        .title{
+            display: flex;
+            justify-content: space-between;
+            a{
+                color: $primary;
+                cursor: pointer;
+                transition: .2s;
+                &:hover{
+                    color: darken($primary, 10%)
+                }
+            }
+        }
+        h1{
+            font-weight: 800;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .friend-wrapper{
+            display: flex;
+            flex-direction: column;
+            padding: 7px;
+            background-color: rgba(0, 0, 0, 0.025);
+            border-radius: 10px;
+            overflow: auto;
+            height: 80%;
+        }
+        .friend-card{
+            display: flex;
+            padding: 7px;
+            align-items: center;
+            gap: 25px;
+            justify-content: space-between;
+            border-radius: 50px;
+            transition: .2s;
+            cursor: pointer;
+            &:hover{
+                background-color: rgba(0, 0, 0, 0.057);
+            }
+            .profile-picture{
+                background-color: rgba(18, 18, 18, 0.221);
+                border-radius: 25px;
+                img{
+                    border-radius: 25px;
+                    max-width: 50px;
+                    max-height: 50px;
+                    aspect-ratio: 1/1;
+                    object-fit: cover;
+                    object-position: top;
+                }
+
+                }
+            .name{
+                font-weight: 400;
+                font-size: 20px;
+                width: 90%;
+            }
+            .arrow{
+                display: flex;
+                align-items: center;
+                i{
+                    transition: .2s;
+                    font-size: 24px;
+                    &:hover{
+                        color: $primary;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+

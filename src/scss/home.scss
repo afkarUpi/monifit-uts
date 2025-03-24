@@ -1,0 +1,193 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+$primary: #FF6600;
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+li span#home, li a i#home{
+  color: $primary !important;
+}
+
+.main-content{
+    display: flex;
+    padding: 100px 150px;
+    flex-direction: column;
+    gap: 25px;
+    margin-left: 150px;
+    .container{
+        padding: 10px;
+        gap: 10px;
+        border-radius: 10px;
+        box-shadow: 0 4px 3px rgba(0, 0, 0, 0.221);
+        border-bottom: 3px solid $primary;
+        transition: .2s;
+        .button{
+            background-color: $primary;
+            width: 100%;
+            color: white;
+            padding: 5px;
+            box-shadow: 0 4px 3px rgba(0, 0, 0, 0.221);
+            border-radius: 10px;
+            cursor: pointer;
+            transition: .2s;
+            &:hover{
+                background-color: darken($primary, 5%);
+            }
+            i{
+                font-size: 25px;
+            }
+        }
+        .title{
+          font-weight: 800;
+          font-size: 24px;
+        }
+    }
+
+    .image-card{
+      display: flex;
+      border-radius: 10px;
+      gap: 10px;
+      align-items: center;
+      overflow: hidden;
+      border-bottom: 1px solid grey;
+      transition: .2s;
+      cursor: pointer;
+      &:hover{
+        background-color: rgba(0, 0, 0, 0.032);
+        box-shadow: 0 4px 3px rgba(0, 0, 0, 0.221);
+      }
+      .title{
+        margin-bottom: 10px;
+      }
+      img{
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        max-height: 100px;
+        max-width: 100px;
+        border-radius: 10px;
+      }
+    }
+
+    .greeting.container{
+        height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+        span{
+            font-weight: 800;
+            font-size: 2rem;
+        }    
+        img{
+            margin-bottom: -50px;
+            margin-right: -80px;
+        }
+    }
+
+    .daily{
+      display: flex;
+      gap: 25px;
+      .container{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .progress-circle{
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          border: 9px solid;
+          border-color: #dbdcef;
+          border-right-color: $primary;
+        }
+      }
+      .nutrients{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        .container{
+          width: 96.5%;
+          .title{
+            font-size: 20px;
+          }
+        }
+        .progress{
+          width: 80%;
+          border: 1px solid $primary;
+          border-radius: 25px;
+          .total{
+            height: 10px;
+            background-color: $primary;
+            border-radius: 25px;
+            &#carbs{
+              width: 20%;
+            }
+            &#protein{
+              width: 40%;
+            }
+            &#fat{
+              width: 10%;
+            }
+          }
+        }
+      }
+    }
+
+    .recent-foods{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+}
