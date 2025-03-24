@@ -17,6 +17,33 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <!-- Your content goes here -->
+  <main>
+    <div class="login-container">
+        <div class="login-form">
+            <h1>Register</h1>
+            <form action="login.php" method="POST">
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="username" name="username" id="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+                <p>Don't have an account? <a href="login.html">Login</a></p>
+                <button type="submit" class="btn">Register</button>
+            </form>
+        </div>
+        <div class="welcome-text">
+            <h1>Welcome to MoniFit</h1>
+            <p>Track your daily nutrition intake</p>
+            <p>Already have an account? <a href="login.html">Login</a></p>
+        </div>
+    </div>
+</main>
 </body>
 </html>

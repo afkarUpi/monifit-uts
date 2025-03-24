@@ -19,7 +19,42 @@
 </head>
 <body>
   <main>
-    <!-- Your content goes here -->
+    <div id="the-monifit-sidebar"></div>
+    <div class="container">
+      <div class="add-food-form">
+        <h1>Add Food</h1>
+        <p>Here you can fill in the details of the food you have consumed. This information will help you track your daily nutrition intake and maintain a balanced diet.</p>
+        <form action="" method="POST">
+          <div class="input-group">
+            <label for="foodName">Food Name</label>
+            <input type="text" name="foodName" id="foodName" placeholder="e.g. Lagsana" required>
+          </div>
+          <div class="input-group">
+            <label for="protein">Protein (g)</label>
+            <input type="number" name="protein" id="protein" required>
+          </div>
+          <div class="input-group">
+            <label for="carbs">Carbs (g)</label>
+            <input type="number" name="carbs" id="carbs" required>
+          </div>
+          <div class="input-group">
+            <label for="fat">Fat (g)</label>
+            <input type="number" name="fat" id="fat" required>
+          </div>
+          <div class="input-group">
+            <label for="calories">Calories (kcal)</label>
+            <input type="number" name="calories" id="calories" required>
+          </div>
+          <div class="input-group">
+            <label for="date">Date</label>
+            <input type="date" name="date" id="date" required>
+          </div>
+          <button type="submit" class="btn">Add Food</button>
+        </form>
+      </div>
+    </div>
   </main>
+  <script src="src/js/script.js"></script>
+  <script src="src/js/addFood.js"></script>
 </body>
 </html>
