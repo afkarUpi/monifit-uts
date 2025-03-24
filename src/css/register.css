@@ -101,7 +101,26 @@ div.welcome-text {
   padding: 0 2em;
   text-align: center;
   color: #fff;
-  background-image: linear-gradient(#fda163, #e95d00)
+  background: radial-gradient(circle at top left, #FF6600, #604CC3);
+  background-size: 300% 300%;
+  animation: radialGradientAnimation 10s cubic-bezier(0.23, 1, 0.320, 1) infinite;
+}
+
+@keyframes radialGradientAnimation {
+  0% {
+    background-position: 0% 0%;
+    /* Start from bottom-right */
+  }
+
+  50% {
+    background-position: 100% 100%;
+    /* End at top-left */
+  }
+
+  100% {
+    background-position: 0% 0%;
+    /* End at top-left */
+  }
 }
 
 div.welcome-text h1 {
